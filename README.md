@@ -27,21 +27,6 @@ Instancie a classe `Grafo` utilizando o construtor padrão. Depois, utilize os m
 Para imprimir as indicações de filmes para um usuário, utilize o método `obterIndicacao()` e exiba os resultados.
 
 ---
+### 5. Para executar este arquivo sem modificações
+Para executar este arquivo sem realizar nenhuma modificação, basta rodar o algoritmo conforme o sistema operacional ou ambiente de terminal em que você está trabalhando. Certifique-se de que todas as dependências e configurações estejam devidamente ajustadas para garantir uma execução correta e eficiente do programa.
 
-## Getting Started
-
-Bem-vindo ao ambiente de desenvolvimento Java no Visual Studio Code. Aqui está um guia para ajudá-lo a começar a escrever código Java neste editor.
-
-### Estrutura de Pastas
-
-O workspace contém, por padrão, duas pastas principais:
-- `src`: A pasta onde estão localizados os arquivos de código-fonte.
-- `lib`: A pasta para armazenar as dependências.
-
-Os arquivos de saída compilados serão gerados na pasta `bin` por padrão.
-
-> Se desejar personalizar a estrutura de pastas, abra `.vscode/settings.json` e atualize as configurações de acordo.
-
-### Gerenciamento de Dependências
-
-A visualização `JAVA PROJECTS` no VS Code permite gerenciar suas dependências. Mais detalhes podem ser encontrados [aqui](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
