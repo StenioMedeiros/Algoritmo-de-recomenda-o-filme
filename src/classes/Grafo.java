@@ -10,16 +10,17 @@ import java.util.PriorityQueue;
 public class Grafo {
     private List<Usuario> usuarios;
     private List<Relacao> relacoes;
-
+    
+    // Construtor da classe Grafo
     public Grafo() {
         this.usuarios = new ArrayList<>();
         this.relacoes = new ArrayList<>();
     }
-
+    
     public void adicionarUsuario(Usuario usuario) {
         this.usuarios.add(usuario);
     }
-
+    	
     public void adicionarRelacao(Usuario origem, Usuario destino, int peso) {
         Relacao relacao = new Relacao(origem, destino, peso);
         this.relacoes.add(relacao);
@@ -28,9 +29,14 @@ public class Grafo {
     public Map<Filme, Double> obterIndicacoes(Usuario usuario) {
         Map<Filme, Double> indicacoes = new HashMap<>();
 
+        
+        
         // Obtém os vizinhos de primeiro e segundo grau
         List<Usuario> vizinhosPrimeiroGrau = usuario.getVizinhos(this);
         List<Usuario> vizinhosSegundoGrau = new ArrayList<>();
+
+        
+        
         for (Usuario vizinho : vizinhosPrimeiroGrau) {
             vizinhosSegundoGrau.addAll(vizinho.getVizinhos(this));
         }
